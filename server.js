@@ -67,8 +67,8 @@ app.put('/blog-posts/:id', jsonParser, (req, res) => {
   const updatedItem = BlogPosts.update({
     id: req.params.id,
     title: req.body.title,
-    content: req.body.content
-    author: req.body.author
+    content: req.body.content,
+    author: req.body.author,
     publishDate: req.body.publishDate
   });
   if (updatedItem) {
